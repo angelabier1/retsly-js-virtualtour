@@ -22,10 +22,8 @@
 ## API
 
 ```javascript
-
   var VirtualTour = require('retsly-js-virtualtour');
   new VirtualTour($el, { mls_id: mls.id, listing_id: listing.id });
-
 ```
 
 ## License
