@@ -15,7 +15,7 @@
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Install with [component.io](http://github.com/component/component):
 
     $ component install Retsly/retsly-js-virtualtour
 
@@ -23,7 +23,7 @@
 
 ```javascript
   var VirtualTour = require('retsly-js-virtualtour');
-  new VirtualTour($el, { mls_id: mls.id, listing_id: listing.id });
+  new VirtualTour('#virtualtour', { mls_id: mls.id, listing_id: listing.id });
 ```
 
 ## License
