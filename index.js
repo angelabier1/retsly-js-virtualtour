@@ -10,10 +10,10 @@ if(typeof Retsly !== 'undefined') {
     var Component = function(options) {
 
       if(!options || typeof options.mls_id === "undefined")
-        throw new Error('You must provide a mls_id: `{mls_id: x}`');
+        throw new Error('You must provide a mls_id: `{mls_id: mls.id}`');
 
       if(!options || typeof options.listing_id === "undefined")
-        throw new Error('You must provide a listing_id: `{listing_id: x}`');
+        throw new Error('You must provide a listing_id: `{listing_id: listing.id}`');
 
       this.options = _.extend({
         mls_id: null,
@@ -37,6 +37,6 @@ if(typeof Retsly !== 'undefined') {
 
 } else {
   module.exports = exports = function(){
-    throw new Error('Retsly SDK not detected');
+    return; // NOOP.
   };
 }
