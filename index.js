@@ -1,6 +1,7 @@
 /*
  * Retsly VirtualTour Component
  * Requires Retsly SDK (Full hosted SDK including _, $, BB)
+ * TODO: Need to be able to pass in a listing model
  */
 
 if(typeof Retsly !== 'undefined') {
@@ -9,6 +10,7 @@ if(typeof Retsly !== 'undefined') {
 
     var Component = {};
     Component.Basic = Backbone.View.extend({
+      index: 0,
       initialize: function(options) {
 
         if(!options || typeof options.mls_id === "undefined")
@@ -28,16 +30,52 @@ if(typeof Retsly !== 'undefined') {
         var self = this;
         new Retsly.Models.Listing({ _id: this.options.listing_id }, {
           mls_id: this.options.mls_id,
-          callback: function(listing) { self.render(listing); }
-        }).fetch();
+          complete: function(listing) { self.render(listing); }
+        }).fetch({ limit: 1 });
 
       },
       render: function(listing) {
         var html = require('./templates/template');
         var template = _.template(html);
         this.$el.html( template( listing.toJSON() ));
+
+        var self = this;
+        this.$el.find('li:first img').on('load', function() {
+
+          $([ self.$el, self.$el.find('ul').get(0) ])
+            .css({
+              'width': self.$el.find('li:first').width()+'px',
+              'height': self.$el.find('li:first').height()+'px'
+            });
+
+          self.$el.find('li:first').animate({ 'opacity': 1 });
+
+          setTimeout(function() {
+            setInterval(function() {
+              self.cycle.apply(self);
+            }, 5000);
+          }, 5000);
+
+        });
+
+      },
+      cycle: function() {
+
+        var photos = this.$el.find('li');
+
+        this.last_index = this.index;
+        this.index = (this.index < photos.length-1 || !this.index) ? this.index+1 : 0;
+
+        var pin = photos.get(this.index);
+        $(pin).css({ 'z-index': 1 }).animate({ 'opacity': 1 });
+
+        // Don't run the cross fade on first load.
+        if(this.$el.hasClass('defer')) return this.$el.removeClass('defer');
+        var pout = photos.get(this.last_index);
+        $(pout).css({ 'z-index': 0 }).animate({'opacity': 0});
+
       }
-    })
+    });
 
     return Component;
 
