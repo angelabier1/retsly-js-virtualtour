@@ -4,7 +4,9 @@
   "description": "A virtual tour component built on Retsly",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "Retsly/retsly-js-phototile": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
