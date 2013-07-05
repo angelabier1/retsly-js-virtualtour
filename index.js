@@ -8,7 +8,8 @@ if(typeof Retsly !== 'undefined') {
 
   Retsly.Views.VirtualTour = module.exports = exports = (function(){
 
-    var PhotoTile = require('retsly-js-phototile');
+    var PhotoTile = require('retsly-js-phototile')
+      , ListingInfo = require('retsly-js-listinginfo');
 
     var Component = {};
     Component.Basic = Backbone.View.extend({
@@ -32,7 +33,14 @@ if(typeof Retsly !== 'undefined') {
         new PhotoTile.Basic({
           target: this.$el,
           mls_id: this.options.mls_id,
-          listing_id: this.options.listing_id
+          listing_id: this.options.listing_id,
+          height: 200
+        });
+
+        new ListingInfo.Basic({
+          target: this.$el,
+          mls_id: this.options.mls_id,
+          listing_id: this.options.listing_id,
         });
 
       }
