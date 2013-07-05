@@ -14,6 +14,7 @@ if(typeof Retsly !== 'undefined') {
     var Component = {};
     Component.Basic = Backbone.View.extend({
       index: 0,
+      className: 'retsly-component retsly-js-virtualtour span12 row-fluid',
       initialize: function(options) {
 
         if(!options || typeof options.mls_id === "undefined")
