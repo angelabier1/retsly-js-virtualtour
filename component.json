@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "Retsly/retsly-js-phototile": "*",
-    "Retsly/retsly-js-listinginfo": "*"
+    "retsly-js-phototile": "*",
+    "retsly-js-listinginfo": "*"
   },
   "development": {},
   "license": "MIT",
