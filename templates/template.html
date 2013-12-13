@@ -3,11 +3,11 @@
     <li>
       <% if(index === 0) { %>
         <div class='retsly-js-virtualtour-overlay'>
-          <h2><%- StreetNumber %> <%- StreetName %> <%- County %></h2>
-          <h3>$ <%- ListingPrice %> - <%- NumberOfBedrooms %> Bed, <%- NumberOfBaths %> Bath</h3>
+          <h2><%- streetNumber %> <%- streetName %> <%- county %></h2>
+          <h3>$ <%- listingPrice %> - <%- numberOfBedrooms %> Bed, <%- numberOfBaths %> Bath</h3>
         </div>
       <% } %>
-      <img src='<%- photo.get('Location') %>' />
+      <img src='<%- photo.get('location') %>' />
     </li>
   <% }); %>
 </ul>
