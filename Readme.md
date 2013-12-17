@@ -25,8 +25,8 @@
 var VirtualTour = require('retsly-js-virtualtour');
 new VirtualTour.Basic({
   target: '#demo-virtualtour',
-  vendor_id: 'sandicor',
-  listing_id: '51cf54e0f8079f0a411193c7'
+  vendorID: 'sandicor',
+  listingID: '51cf54e0f8079f0a411193c7'
 });
 ```
 

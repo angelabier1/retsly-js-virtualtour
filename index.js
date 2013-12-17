@@ -22,31 +22,31 @@ Components.Basic = Backbone.View.extend({
   className: 'retsly-component retsly-js-virtualtour span12 row-fluid',
   initialize: function(options) {
 
-    if(!options || typeof options.vendor_id === "undefined")
-      throw new Error('Retsly.Views.VirtualTour requires a vendor_id: `{vendor_id: \'id\'}`');
+    if(!options || typeof options.vendorID === "undefined")
+      throw new Error('Retsly.Views.VirtualTour requires a vendorID: `{vendorID: \'id\'}`');
 
-    if(!options || typeof options.listing_id === "undefined")
-      throw new Error('Retsly.Views.VirtualTour requires a listing_id: `{listing_id: listing.id}`');
+    if(!options || typeof options.listingID === "undefined")
+      throw new Error('Retsly.Views.VirtualTour requires a listingID: `{listingID: listing.id}`');
 
     if(typeof options == "undefined" || !options.target)
       throw new Error('Retsly.Views.VirtualTour is a subview and must have a target: `{target:this}`');
 
-    this.options = _.extend({ vendor_id: null, listing_id: null }, options);
+    this.options = _.extend({ vendorID: null, listingID: null }, options);
     options.target = (typeof options.target.$el !== "undefined") ? options.target.$el : $(options.target);
 
     $(options.target).append(this.$el);
 
     new PhotoTile.Basic({
       target: this.$el,
-      vendor_id: this.options.vendor_id,
-      listing_id: this.options.listing_id,
+      vendorID: this.options.vendorID,
+      listingID: this.options.listingID,
       height: 200
     });
 
     new ListingInfo.Basic({
       target: this.$el,
-      vendor_id: this.options.vendor_id,
-      listing_id: this.options.listing_id,
+      vendorID: this.options.vendorID,
+      listingID: this.options.listingID,
     });
 
   }
