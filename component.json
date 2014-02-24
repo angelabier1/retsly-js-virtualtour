@@ -7,12 +7,12 @@
     "components/jquery": "1.10.2",
     "jashkenas/backbone": "*",
     "jashkenas/underscore": "*",
-    "retsly/retsly-js-backbone": "*"
+    "retsly/retsly-js-sdk": "*",
+    "retsly/retsly-js-backbone": "*",
+    "retsly/retsly-js-phototile": "*",
+    "retsly/retsly-js-listinginfo": "*"
   },
-  "local": [
-    "retsly-js-phototile",
-    "retsly-js-listinginfo"
-  ],
+  "local": [ ],
   "license": "MIT",
   "main": "index.js",
   "scripts": [
