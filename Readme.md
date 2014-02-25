@@ -1,15 +1,4 @@
-<pre>
-                          ,------.        ,--.       ,--.
-                          |  .--. ',---.,-'  '-.,---.|  ,--. ,--.
-                          |  '--'.| .-. '-.  .-(  .-'|  |\  '  /
-                          |  |\  \\   --. |  | .-'  `|  | \   '
-                          `--' '--'`----' `--' `----'`--.-'  /
-                            Make Real Estate Apps in    `---'
-                               Minutes Not Months
-
-</pre>
-
-# retsly-js-virtualtour
+# retsly-js-virtualtour [![wercker status](https://app.wercker.com/status/89a95bb44f2b89982867413268d0409f/s/ "wercker status")](https://app.wercker.com/project/bykey/89a95bb44f2b89982867413268d0409f)
 
   A virtual tour component built on Retsly
 
