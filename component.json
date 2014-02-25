@@ -1,5 +1,5 @@
 {
-  "name": "retsly-js-virtualtour",
+  "name": "retsly-virtualtour",
   "repo": "Retsly/retsly-js-virtualtour",
   "description": "A virtual tour component built on Retsly",
   "version": "0.0.2",
@@ -16,13 +16,13 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js",
-    "templates/template.js"
-  ],
-  "templates": [
-    "templates/template.html"
+    "index.js"
   ],
   "styles": [
     "styles/style.css"
-  ]
+  ],
+  "development": {
+    "timoxley/assert": "*",
+    "visionmedia/mocha": "1.14.0"
+  }
 }
