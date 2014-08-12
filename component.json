@@ -3,6 +3,7 @@
   "repo": "Retsly/retsly-js-virtualtour",
   "description": "A virtual tour component built on Retsly",
   "version": "0.0.2",
+  "keywords": [],
   "dependencies": {
     "components/jquery": "1.10.2",
     "jashkenas/backbone": "*",

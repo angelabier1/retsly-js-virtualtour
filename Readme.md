@@ -18,6 +18,10 @@ new VirtualTour.Basic({
   listingID: '51cf54e0f8079f0a411193c7'
 });
 ```
+## Repo Owner
+
+[Kyle Campbell](http://github.com/slajax)
+
 
 ## License
 
