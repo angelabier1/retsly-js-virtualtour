@@ -3,8 +3,8 @@
  * Dependencies
  */
 var assert = require('assert');
-var Retsly = require('retsly-backbone');
-var Tour = require('retsly-virtualtour');
+var Retsly = require('retsly-js-backbone');
+var Tour = require('retsly-js-virtualtour');
 
 /**
  * Tests

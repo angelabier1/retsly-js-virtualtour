@@ -1,5 +1,5 @@
 {
-  "name": "retsly-virtualtour",
+  "name": "retsly-js-virtualtour",
   "repo": "Retsly/retsly-js-virtualtour",
   "description": "A virtual tour component built on Retsly",
   "version": "0.0.3",
@@ -9,9 +9,9 @@
     "jashkenas/backbone": "*",
     "jashkenas/underscore": "*",
     "retsly/retsly-js-sdk": "0.4.0",
-    "retsly/retsly-js-backbone": "0.0.1",
-    "retsly/retsly-js-phototile": "0.0.3",
-    "retsly/retsly-js-listinginfo": "0.1.1"
+    "retsly/retsly-js-backbone": "0.1.0",
+    "retsly/retsly-js-phototile": "0.1.0",
+    "retsly/retsly-js-listinginfo": "0.2.0"
   },
   "local": [ ],
   "license": "MIT",
