@@ -2,7 +2,7 @@
   "name": "retsly-js-virtualtour",
   "repo": "Retsly/retsly-js-virtualtour",
   "description": "A virtual tour component built on Retsly",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {
     "components/jquery": "1.10.2",
