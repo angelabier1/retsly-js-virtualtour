@@ -2,8 +2,8 @@
 /**
  * Dependencies
  */
-var ListingInfo = require('retsly-listinginfo');
-var PhotoTile = require('retsly-phototile');
+var ListingInfo = require('retsly-js-listinginfo');
+var PhotoTile = require('retsly-js-phototile');
 
 var Backbone = require('backbone');
 var _ = require('underscore');
